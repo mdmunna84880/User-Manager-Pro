@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Yourself from Our Communityt</title>
+</head>
+<body>
+    <h2>Are you sure to delete yourself from our community to confirm: <%=user.username%></h2>
+    <form method="post" action="/users/<%=user.id%>?_method=DELETE">
+        <label for="email">Enter email</label>
+        <input type="text" id="email" name="email" placeholder="abc34@gmail.com"><br><br>
+        <label for="password">Enter password</label>
+        <input type="password" id="password" name="password" placeholder="abc97#$6hk"><br><br>
+        <button>Delete</button>
+    </form>
+</body>
+</html>
